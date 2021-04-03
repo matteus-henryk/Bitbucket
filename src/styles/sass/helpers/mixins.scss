@@ -1,0 +1,51 @@
+
+
+//? FONTS
+@mixin foundryMonolineM($size) {
+  font-family: "FoundryMonoline-Md" ,sans-serif;
+  font-weight: 500;
+  font-size: $size;
+}
+
+@mixin foundryMonolineL($size) {
+  font-family: "FoundryMonoline-Lt" ,sans-serif;
+  font-weight: 300;
+  font-size: $size;
+}
+
+@mixin foundryMonolineXb($size) {
+  font-family: "FoundryMonoline" ,sans-serif;
+  font-weight: 800;
+  font-size: $size;
+}
+
+@mixin foundryMonolineR($size) {
+  font-family: "FoundryMonoline" ,sans-serif;
+  font-weight: normal;
+  font-size: $size;
+}
+
+@mixin RobotoB($size) {
+  font-family: "Roboto" ,sans-serif;
+  font-weight: bold;
+  font-size: $size;
+}
+
+@mixin RobotoL($size) {
+  font-family: "Roboto" ,sans-serif;
+  font-weight: 300;
+  font-size: $size;
+}
+
+@mixin RobotoR($size) {
+  font-family: "Roboto" ,sans-serif;
+  font-weight: normal;
+  font-size: $size;
+}
+
+@mixin SegoeUIR($size) {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: normal;
+  font-size: $size;
+}
+

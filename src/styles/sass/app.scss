@@ -1,0 +1,73 @@
+//? LIBS
+@import "../../../node_modules/uikit/dist/css/uikit.css";
+@import "../../../node_modules/swiper/swiper-bundle.css";
+
+//? HELPERS
+@import "./helpers/mixins.scss";
+@import "./helpers/vars.scss";
+
+//? COMPONETS
+@import "./components/menu";
+@import "./components/banner";
+@import "./components/about";
+@import "./components/know-more";
+@import "./components/footer";
+
+
+.uk-container {
+  max-width: 1200px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  background: #FFFFFF;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+
+@media (max-width: 768px) {
+  .hide-on-desktop {
+    display: block;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .hide-on-mobile {
+    display: block;
+  }
+
+  .hide-on-desktop {
+    display: none;
+  }
+}
+
+.form-error {
+  color: #dc3545;
+  font-family: "Roboto", sans-serif;
+  font-size: clamp(1.2rem, 1.4rem, 1.6rem);
+  font-weight: 400px;
+}

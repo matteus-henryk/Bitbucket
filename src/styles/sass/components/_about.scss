@@ -1,0 +1,257 @@
+.block-about{
+
+  h2 {
+    @include foundryMonolineM(clamp(1.8rem, 2.0rem, 2.2rem));
+    color: #000000;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .banner-about-car {
+    margin-bottom: 37px;
+
+    .thumbs {
+      display: none;
+    }
+
+    .banner {
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+  }
+  .description {
+    p {
+      @include foundryMonolineR(clamp(1.6rem, 1.8rem, 2.0rem));
+      color: #000000;
+      text-align: center;
+    }
+  }
+
+  .banner-internal-car {
+    background: #000000;
+    margin-bottom: 30px;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .content {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: flex-end;
+
+      .uk-container {
+        margin-bottom: 40px;
+
+        h3 {
+          color: white;
+          @include foundryMonolineL(clamp(2.2rem, 2.4rem, 2.6rem));
+          margin: 0 0 10px;
+          text-transform: uppercase;
+          text-align: center;
+          font-style: italic;
+        }
+
+        p {
+          color: white;
+          @include foundryMonolineL(clamp(1.4rem, 1.6rem, 1.8rem));
+          margin: 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+
+  .slide-about-car {
+    width: 100%;
+    margin-bottom: 40px;
+
+    .prev-about-car {
+      img {
+        transform: rotateZ(180deg);
+      }
+    }
+
+ 
+
+    .swiper-slide {
+
+      .content {
+        width: 100%;
+        margin: 0 auto;
+        
+        .container-img {
+          width: 100%;
+          margin: 0 auto 13px;
+  
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .description {
+
+          h4 {
+            @include foundryMonolineM(clamp(1.8rem, 2.0rem, 2.2rem));
+            color: #000000;
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 10px;
+          }
+
+          p {
+            @include foundryMonolineL(clamp(1.2rem, 1.4rem, 1.6rem));
+            color: #000000;
+            text-align: center;
+            margin: 0;
+          }
+        }
+
+      }
+
+    }
+
+    .prev-about-car, .next-about-car {
+      width: 40px;
+      height: 40px;
+      background: rgba(213, 213, 213, .5);
+      border-radius: 50%;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+      top: 32.5%;
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  .pagination-about-car {
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    .swiper-pagination-bullet {
+      margin: 0 10px;
+      width: 15px;
+      height: 15px;
+      background: $bgGrayMedium;
+      opacity: 1;
+
+      &.swiper-pagination-bullet-active {
+        background: $bgGrayDark;
+      }
+    }
+  }
+
+  @media (min-width: 650px) {
+    .banner-about-car {
+
+      .thumbs {
+        display: block;
+        width: 20%;
+        margin-right: 40px;
+
+        button {
+          background: transparent;
+          border: 1px solid $bgGrayMedium;
+          padding: 3px;
+          margin-bottom: 8px;
+
+          img {
+            min-width: 100px;
+            min-height: 60px;
+          }
+        }
+      }
+    } 
+  }
+
+  @media (min-width: 768px) {
+
+    h2 {
+      text-align: left;
+    }
+
+    .banner-about-car {
+      .banner {
+        width: 70%;
+      }
+
+      .thumbs {
+        button {
+          img {
+            min-height: 134px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .banner-about-car {
+      .banner {
+        width: 60%;
+
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+
+    .description {
+      p {
+        text-align: left;
+      }
+    }
+
+    .banner-internal-car {
+
+      img {
+        max-height: 450px;
+      }
+
+      .content {
+        .uk-container {
+          h3 {
+            text-align: left;
+          }
+
+          p {
+            text-align: left;
+          }
+        }
+      }
+    }
+
+    .slide-about-car {
+      width: 75%;
+      margin: 0 auto 40px 0;
+    }
+
+    .pagination-about-car {
+      right: 25%;
+    }
+  }
+
+  @media (min-width: 1500px) {
+    .slide-about-car {
+      width: 85%;
+    }
+
+    .pagination-about-car {
+      right: 15%;
+    }
+  }
+
+}

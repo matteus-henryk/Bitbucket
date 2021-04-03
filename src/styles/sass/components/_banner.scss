@@ -1,0 +1,156 @@
+.block-banner {
+  padding-bottom: 40px;
+  
+  .banner {
+    width: 100%;
+
+    .banner-img {
+      width: 100%;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .banner-name-img {
+      width: 90%;
+      margin: 0 auto 40px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .contact {
+      background: $bgGray;
+      border-radius: 4px;
+      padding: 20px;
+
+      .title {
+        margin-bottom: 20px;
+
+        img {
+          margin-right: 10px;
+        }
+
+        p, h5 {
+          margin: 0;
+        }
+
+        p {
+          @include foundryMonolineM(clamp(1.2rem, 1.4rem, 1.6rem));
+          color: #000000;
+        }
+
+        h5 {
+          @include foundryMonolineM(clamp(2.0rem, 2.2rem, 2.4rem));
+          color: $textRed;
+          text-transform: uppercase;
+          line-height: 1.7rem;
+        }
+      }
+
+      form {
+        width: 100%;
+
+        .input-item{
+          width: 100%;
+          margin-bottom: 5px;
+          position: relative;
+
+          &.is-invalid-label {
+            img {
+              top: 32%;
+            }
+          }
+
+
+          input {
+            width: 100%;
+            height: 36px;
+            border: 1px solid $borderGray;
+            background: transparent;
+            border-radius: 4px;
+            padding-left: 40px;
+            box-sizing: border-box;
+            @include RobotoR(clamp(1.2rem, 1.4rem, 1.6rem));
+            color: $grayExtraLight;
+
+            &::placeholder {
+              @include RobotoR(clamp(1.2rem, 1.4rem, 1.6rem));
+              color: $grayExtraLight;
+            }
+          }
+
+          select {
+            appearance: none;
+            width: 100%;
+            padding-left: 40px;
+            height: 36px;
+            border: 1px solid $borderGray;
+            border-radius: 4px;
+            @include RobotoR(clamp(1.2rem, 1.4rem, 1.6rem));
+            color: $grayExtraLight;
+            background: url(../../assets/images/arrow-select.svg), $bgGray;
+            background-position: 97.5% center;
+            background-size: 15px 11px;
+            background-repeat: no-repeat;
+          }
+
+          img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 11px;
+          }
+        }
+
+        button {
+          background: $green;
+          border: 2px solid $green;
+          @include RobotoB(clamp(1.2rem, 1.4rem, 1.6rem));
+          text-transform: uppercase;
+          width: 100%;
+          color: white;
+          padding: 11px 0;
+          border-radius: 4px;
+          transition: .3s;
+
+          &:hover {
+            color: $green;
+            background: transparent;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .banner {
+      .banner-name-img {
+        img {
+          display: none;
+        }
+      }
+
+      .contact {
+        max-width: 270px;
+        margin: 0 auto 0 0;
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .banner {
+      .contact {
+        position: fixed;
+        top: 35%;
+        right: 50px;
+        z-index: 9999;
+      }
+    }
+    
+  }
+}

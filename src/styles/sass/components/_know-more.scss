@@ -1,0 +1,154 @@
+.block-know-more {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .title {
+    h2 {
+      @include foundryMonolineM(clamp(2.2rem, 2.4rem, 2.6rem));
+      color: #000000;
+      font-style: italic;
+      text-align: center;
+      margin: 0;
+    }
+
+    p {
+      @include foundryMonolineR(clamp(1.4rem, 1.6rem, 1.8rem));
+      color: #000000;
+      text-align: center;
+      margin: 0 0 10px;
+    }
+  }
+
+  .slide-know-more {
+    .swiper-slide {
+      .content {
+        width: 99%;
+        margin: 0 auto;
+
+        .infos-car-container {
+          border: 1px solid $bgGrayMedium;
+          margin-bottom: 10px;
+
+          &>img {
+            width: 75%;
+          }
+
+          button {
+            background: transparent;
+            border: 0;
+            box-shadow: none;
+            margin-right: 15px;
+
+            img {
+              width: 20px;
+              height: 12px;
+            }
+          }
+
+          .description {
+            width: 80%;
+            margin: 0 auto;
+            height: 0;
+            opacity: 0;
+            transition: .3s;
+
+            p {
+              @include foundryMonolineL(clamp(1.2rem, 1.4rem, 1.6rem));
+              color: #000000;
+              text-align: center;
+              margin: 15px 0;
+              display: none;
+            }
+
+            &.active {
+              height: initial;
+              opacity: 1;
+
+              p {
+                display: block;
+              }
+            }
+          }
+        }
+
+        a {
+          display: block;
+          width: 99%;
+          margin: 0 auto;
+          border-radius: 4px;
+          border: 1px solid $bgGrayMedium;
+          @include RobotoL(clamp(1.2rem, 1.4rem, 1.6rem));
+          color: #000000;
+          text-transform: uppercase;
+          text-align: center;
+          padding: 7px 0;
+          transition: .3s;
+
+          &:hover {
+            background: $bgGrayMedium;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .title {
+      h2, p {
+        text-align: left;
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .slide-know-more {
+      width: 75%;
+      margin: 0 auto 0 0;
+      .swiper-slide {
+        .content {
+          .infos-car-container {
+
+            .img-container {
+              img {
+                margin: 0 auto;
+              }
+            }
+
+            .description {
+              height: auto;
+              opacity: 1;
+              text-align: center;
+              margin: 10px auto 20px;
+  
+              p {
+                display: initial;
+                text-align: center !important;
+              }
+            }
+
+            button {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    @media (min-width: 1300px) {
+      .slide-know-more {
+        .content {
+          .infos-car-container {
+            min-height: 316px;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 1500px) {
+      .slide-know-more {
+        width: 85%;
+      }
+    }
+  }
+}

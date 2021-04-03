@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html amp lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./styles/css/app.css">
+  <title>Bitbucket</title>
+</head>
+
+<body>
+  <header>
+    <nav class="menu-container">
+      <div class="uk-container uk-flex uk-flex-middle uk-flex-between">
+        <div class="menu-item">
+          <a href="#">
+            <img src="./assets/images/home-button.svg" alt="Icone home">
+            <span>Ir para o Portal Banzai</span>
+          </a>
+        </div>
+        <div class="menu-item">
+          <ul class="uk-flex uk-flex-middle uk-flex-between">
+            <li>
+              <a href="#">
+                <img src="./assets/images/point.svg" alt="Icone de localização">
+                <span>Encontre uma concessionária</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/images/email.svg" alt="Icone mensagem">
+                <span>Fale Conosco</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="header-infos uk-flex uk-flex-column uk-flex-middle">
+      <div class="soon">
+        <a href="/">
+          <img src="./assets/images/logo2x.png" alt="Logo">
+        </a>
+      </div>
+      <a href="tel:3131231234" target="_blank" class="call">
+        <p>
+          central de atendimento
+        </p>
+        <h4>
+          (31) 3123-1234
+        </h4>
+      </a>
+    </div>
+  </header>
+  <main>
+    <section class="block-banner">
+      <div class="banner uk-position-relative">
+        <div class="banner-img">
+          <img src="./assets/images/carro22x.png" alt="Carro" class="hide-on-desktop">
+          <img src="./assets/images/banner-carro2x.png" alt="Carro" class="hide-on-mobile">
+        </div>
+        <div class="banner-name-img">
+          <img src="./assets/images/logo-car.svg" alt="Nome do carro">
+        </div>
+
+        <div class="uk-container">
+          <div class="contact">
+            <div class="title uk-flex uk-flex-middle">
+              <img src="./assets/images/phone.svg" alt="Icone Telefone">
+              <div class="uk-flex uk-flex-column">
+                <p>
+                  Solicitar um
+                </p>
+                <h5>contato</h5>
+              </div>
+            </div>
+            <form data-validate>
+              <div class="input-item">
+                <input type="text" name="name" id="name" placeholder="Nome" required>
+                <img src="./assets/images/icon-user.svg" alt="Icone Usuario">
+              </div>
+              <div class="input-item">
+                <input type="email" name="email" id="email" placeholder="E-mail" required>
+                <img src="./assets/images/email.svg" alt="Icone email">
+              </div>
+              <div class="input-item">
+                <input type="text" name="phone" id="phone" placeholder="Telefone" required>
+                <img src="./assets/images/icon-phone.svg" alt="Icone phone">
+              </div>
+              <div class="input-item">
+                <select name="schedule" id="schedule" required>
+                  <option value="0" disabled selected>Escolha o horário</option>
+                  <option value="1">08:00</option>
+                  <option value="2">10:00</option>
+                  <option value="3">12:00</option>
+                  <option value="4">14:00</option>
+                  <option value="5">16:00</option>
+                  <option value="6">18:00</option>
+                </select>
+                <img src="./assets/images/icon-clock.svg" alt="Icone relogio">
+              </div>
+              <div class="input-item">
+                <select name="localization" id="localization" required>
+                  <option value="0" disabled selected>Escolha a unidade</option>
+                  <option value="1">Lorem Ipsun</option>
+                  <option value="2">Lorem Ipsun</option>
+                  <option value="3">Lorem Ipsun</option>
+                  <option value="4">Lorem Ipsun</option>
+                  <option value="5">Lorem Ipsun</option>
+                  <option value="6">Lorem Ipsun</option>
+                </select>
+                <img src="./assets/images/point.svg" alt="Icone localização">
+              </div>
+              <button type="submit">
+                agendar test drive
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="block-about">
+      <div class="uk-container">
+        <h2>a emoção de dirigir leva você mais longe</h2>
+        <div class="banner-about-car uk-flex uk-flex-middle">
+          <div class="thumbs">
+            <button type="button"><img src="./assets/images/thumb12x.png" alt="Detalhe carro"></button>
+            <button type="button"><img src="./assets/images/thumb22x.png" alt="Detalhe carro"></button>
+            <button type="button"><img src="./assets/images/thumb32x.png" alt="Detalhe carro"></button>
+          </div>
+          <div class="banner">
+            <img src="./assets/images/carros.png" alt="Banner Carro">
+          </div>
+        </div>
+        <div class="description">
+          <p>
+            O novo Civic Geração 10 traz um dessign único mudando a categoria de sedãs para sempre. Ele garante a
+            melhor dirigibilidade com o máximo em sofisticação e conforto, atribuído por seu
+          </p>
+        </div>
+      </div>
+      <div class="banner-internal-car">
+        <div class="uk-position-relative">
+          <img src="./assets/images/banner-about-car2x.png" class="hide-on-desktop" alt="Banner Carro">
+          <img src="./assets/images/banner-about-car-desktop.jpg" class="hide-on-mobile" alt="Banner Carro">
+
+          <div class="content">
+            <div class="uk-container">
+              <h3>
+                prepare-se para algo realmente novo
+              </h3>
+              <p>
+                O Novo Civic Geração 10 vem completo de série. Conheça a versão perfeita para você.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="uk-container  uk-position-relative">
+        <div class="swiper-container slide-about-car">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="content">
+                <div class="container-img">
+                  <img src="./assets/images/painel2x.png" alt="Painel">
+                </div>
+                <div class="description">
+                  <h4>Direção com Assistência</h4>
+                  <p>
+                    Sistema de estabilidade reforça automaticamente o retorno da direção, auxiliando o motorista em
+                    situações onde o carro está ameaçado de instabilidade.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content">
+                <div class="container-img">
+                  <img src="./assets/images/console2x.png" alt="Painel">
+                </div>
+                <div class="description">
+                  <h4>Vidros elétricos com subida</h4>
+                  <p>
+                    Todas as portas possuem vidros elétricos com a função "um toque" e sistema de segurança
+                    antiesmagamento
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content">
+                <div class="container-img">
+                  <img src="./assets/images/cambio2x.png" alt="Painel">
+                </div>
+                <div class="description">
+                  <h4>Câmbio CVT com Paddle Shift</h4>
+                  <p>
+                    O câmbio com transmissão CVT de 7 velocidades com Paddle Shift (aletas) proporciona conforto ao
+                    trocar
+                    de marchas.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev prev-about-car">
+            <img src="./assets/images/arrow-left.svg" alt="Anterior">
+          </div>
+          <div class="swiper-button-next next-about-car">
+            <img src="./assets/images/arrow-right.svg" alt="Proximo">
+          </div>
+        </div>
+        <div class="swiper-pagination pagination-about-car"></div>
+      </div>
+    </section>
+    <section class="block-know-more">
+      <div class="uk-container">
+        <div class="title">
+          <h2>
+            PRONTO PARA TER UM HONDA?
+          </h2>
+          <p>
+            Conheça os últimos grandes lançamentos da honda.
+          </p>
+        </div>
+        <div class="swiper-container slide-know-more">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="content">
+                <div class="infos-car-container">
+                  <div class="img-container uk-flex uk-flex-middle uk-flex-between">
+                    <img src="./assets/images/carro1.png" alt="Carro">
+                    <button type="button" class="btn-accordion">
+                      <img src="./assets/images/arrow-accordeon.svg" alt="Flecha">
+                    </button>
+                  </div>
+                  <div class="description">
+                    <p>
+                      Novo Honda Accord: a combinação perfeita de três atributos exigidos pelo consumidor: elegância,
+                      luxo
+                      e alto desempenho.
+                    </p>
+                  </div>
+                </div>
+                <a href="#">
+                  CONHEÇA MAIS
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content">
+                <div class="infos-car-container">
+                  <div class="img-container uk-flex uk-flex-middle uk-flex-between">
+                    <img src="./assets/images/carro3.png" alt="Carro">
+                    <button type="button" class="btn-accordion">
+                      <img src="./assets/images/arrow-accordeon.svg" alt="Flecha">
+                    </button>
+                  </div>
+                  <div class="description">
+                    <p>
+                      O City está muito mais moderno e esportivo. Com design único e mais tecnológico do que nunca, ele
+                      vai conquistar todos os olhares.
+                    </p>
+                  </div>
+                </div>
+                <a href="#">
+                  CONHEÇA MAIS
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content">
+                <div class="infos-car-container">
+                  <div class="img-container uk-flex uk-flex-middle uk-flex-between">
+                    <img src="./assets/images/carro4.png" alt="Carro">
+                    <button type="button" class="btn-accordion">
+                      <img src="./assets/images/arrow-accordeon.svg" alt="Flecha">
+                    </button>
+                  </div>
+                  <div class="description">
+                    <p>
+                      Com seu design inconfundível, o novo Honda Fit traz novidades que vão surpreender a todos e atrair
+                      ainda mais fãs.
+                    </p>
+                  </div>
+                </div>
+                <a href="#">
+                  CONHEÇA MAIS
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="section-one">
+      <div class="uk-container">
+        <div class="links">
+          <a href="https://g.page/banzaicontorno?share" target="_blank" class="uk-flex uk-flex-middle">
+            <img src="./assets/images/point.svg" alt="Icone de localização">
+            <div class="uk-flex uk-flex-column">
+              <span>Encontre uma</span>
+              <h4>CONCESSIONÁRIA</h4>
+            </div>
+          </a>
+          <a href="tel:3131231234" target="_blank" class="uk-flex uk-flex-column">
+            <span>CENTRAL DE ATENDIMENTO</span>
+            <h4>(31) 3123-1234</h4>
+          </a>
+        </div>
+        <div class="social-links">
+          <h4>SIGA A BANZAI NAS REDES SOCIAIS</h4>
+          <div class="uk-flex uk-flex-middle uk-flex-center">
+            <a href="#" target="_blank">
+              <img src="./assets/images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="#" target="_blank">
+              <img src="./assets/images/instagram.svg" alt="Instagram">
+            </a>
+            <a href="#" target="_blank">
+              <img src="./assets/images/twiter.svg" alt="Twitter">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-two">
+      <div class="uk-container">
+        <div class="soon uk-flex uk-flex-middle uk-flex-center">
+          <a href="/">
+            <img src="./assets/images/logo.png" alt="Logo">
+          </a>
+        </div>
+        <div class="uk-flex uk-flex-middle uk-flex-between ibama">
+          <p>
+            Todos juntos fazem um trânsito melhor
+          </p>
+          <img src="./assets/images/logo_ibama.png" alt="Logo Ibama">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+  <script type="module" src="./scripts/app.js"></script>
+</body>
+
+</html>

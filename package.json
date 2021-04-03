@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "start": "node-sass src/styles/sass/app.scss src/styles/css/app.css -w"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "node-sass": "^5.0.0",
+    "swiper": "^6.5.3",
+    "uikit": "^3.6.18"
+  },
+  "name": "bitbucket",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}
